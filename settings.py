@@ -1,3 +1,5 @@
+#lol. creds.py doesn't get gitt'd
+import creds
 # Django settings for GLUAV3 project.
 
 DEBUG = True
@@ -11,11 +13,11 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
-        'USER': '',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'gluanet_svn',                      # Or path to database file if using sqlite3.
+        'USER': creds.uname,                      # Not used with sqlite3.
+        'PASSWORD': creds.pw,                  # Not used with sqlite3.
+        'HOST': creds.host,                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
