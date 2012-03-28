@@ -1,5 +1,9 @@
+import os
 #lol. creds.py doesn't get gitt'd
 import creds
+
+#helper function for stuff
+here = lambda *x: os.path.join(os.path.abspath(os.path.dirname(__file__)), *x)
 # Django settings for GLUAV3 project.
 
 DEBUG = True
@@ -154,3 +158,4 @@ LOGGING = {
         },
     }
 }
+
